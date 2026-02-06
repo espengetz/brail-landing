@@ -149,6 +149,25 @@ section {
   padding: 0 var(--space-md);
 }
 
+.header-left,
+.header-right {
+  flex: 1;
+}
+
+.header-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header .logo {
+  flex: 0 0 auto;
+}
+
 .header-centered {
   text-align: center;
   padding: var(--space-lg) var(--space-md);
@@ -191,6 +210,16 @@ section {
 .btn-outline:hover {
   background: var(--brail-charcoal);
   color: var(--brail-white);
+}
+
+.btn-white {
+  background: var(--brail-white);
+  color: var(--brail-charcoal);
+  border-radius: var(--border-radius);
+}
+
+.btn-white:hover {
+  background: var(--brail-grey);
 }
 
 .btn-dark {
@@ -266,11 +295,19 @@ section {
 
 .use-case-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-md);
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .use-case-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
   .use-case-grid {
     grid-template-columns: 1fr;
   }
@@ -295,7 +332,6 @@ section {
   opacity: 0.75;
   flex-grow: 1;
   margin-bottom: var(--space-md);
-  font-style: italic;
 }
 
 .client-logo {
@@ -364,17 +400,10 @@ section {
 .step-card {
   flex: 0 0 220px;
   border-radius: var(--border-radius);
-  padding: var(--space-md);
+  padding: var(--space-xs);
+  padding-bottom: var(--space-md);
   display: flex;
   flex-direction: column;
-}
-
-.step-card-light {
-  background: var(--brail-white);
-  color: var(--brail-charcoal);
-}
-
-.step-card-dark {
   background: var(--brail-charcoal);
   color: var(--brail-white);
 }
@@ -382,18 +411,15 @@ section {
 .step-image {
   width: 100%;
   aspect-ratio: 16/10;
-  background: var(--brail-charcoal);
-  border-radius: var(--border-radius-sm);
-  margin-bottom: var(--space-md);
-}
-
-.step-image-light {
   background: var(--brail-white);
+  border-radius: var(--border-radius-sm);
+  margin-bottom: var(--space-sm);
 }
 
 .step-card p {
   font-size: 0.875rem;
   line-height: 1.5;
+  padding: 0 var(--space-sm);
 }
 
 @media (max-width: 900px) {
