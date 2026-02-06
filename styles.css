@@ -247,6 +247,10 @@ section {
   color: var(--brail-white);
 }
 
+a.pill-dark:hover {
+  opacity: 0.85;
+}
+
 .pill-light {
   background: var(--brail-grey);
   color: var(--brail-charcoal);
