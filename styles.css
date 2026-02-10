@@ -219,7 +219,7 @@ section {
   border-radius: 5px;
   font-size: 18px;
   letter-spacing: -1px;
-  box-shadow: 5px 5px 10px rgba(250, 225, 215, 0.25);
+  box-shadow: 5px 5px 20px rgba(176, 159, 153, 0.25);
 }
 
 .btn-white:hover {
@@ -249,6 +249,7 @@ section {
 .pill-dark {
   background: var(--brail-charcoal);
   color: var(--brail-white);
+  box-shadow: 5px 5px 10px rgba(176, 159, 153, 0.25);
 }
 
 a.pill-dark:hover {
@@ -324,6 +325,14 @@ a.pill-dark:hover {
   padding: var(--space-lg);
   display: flex;
   flex-direction: column;
+}
+
+.use-case-card:nth-of-type(1) {
+  box-shadow: 5px 5px 20px rgba(176, 159, 153, 0.25);
+}
+
+.use-case-card:nth-of-type(2) {
+  box-shadow: 5px 5px 10px rgba(176, 159, 153, 0.25);
 }
 
 .use-case-card h3 {
@@ -544,7 +553,7 @@ a.pill-dark:hover {
 
 .future-placeholder {
   flex: 1;
-  aspect-ratio: 4/3;
+  height: 50px;
   background: var(--brail-peach);
   border-radius: var(--border-radius-sm);
 }
@@ -559,7 +568,7 @@ a.pill-dark:hover {
   }
   
   .future-placeholder {
-    aspect-ratio: 16/9;
+    height: 50px;
   }
 }
 
