@@ -1,6 +1,6 @@
 /* Brail Website Styles */
 /* Brand: Warm minimalism, confident whitespace, geometric clarity */
-/* v1.1 - Updated visual styles */
+/* v1.2 - Updated header and button styles */
 
 /* ==========================================================================
    Fonts & Variables
@@ -11,6 +11,7 @@
 :root {
   /* Brand Colors */
   --brail-peach: #FAE1D7;
+  --brail-peach-dark: #FFEDE5;
   --brail-charcoal: #212121;
   --brail-white: #FFFFFF;
   --brail-grey: #F3F3F3;
@@ -169,15 +170,6 @@ section {
   flex: 0 0 auto;
 }
 
-.header-centered {
-  text-align: center;
-  padding: var(--space-lg) var(--space-md);
-}
-
-.header-centered .logo {
-  display: inline-block;
-}
-
 .logo img {
   height: 24px;
   width: auto;
@@ -222,8 +214,9 @@ section {
   box-shadow: 5px 5px 20px rgba(176, 159, 153, 0.25);
 }
 
-.btn-white:hover {
-  background: var(--brail-grey);
+.btn-white:hover,
+.btn-white:active {
+  background: var(--brail-peach-dark);
 }
 
 .btn-dark {
@@ -573,29 +566,38 @@ a.pill-dark:hover {
 }
 
 /* ==========================================================================
-   DAM Page
+   Subpage Styles (DAM, AI-Ready Brand Repository)
    ========================================================================== */
 
-.dam-page {
+.subpage {
   padding: var(--space-lg) 0 var(--space-3xl);
 }
 
-.dam-page h1 {
+.subpage h1 {
   margin-bottom: var(--space-lg);
 }
 
-.dam-intro {
+.subpage-intro {
   margin-bottom: var(--space-xl);
 }
 
-.dam-intro p {
+.subpage-intro p {
   margin-bottom: var(--space-md);
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: -0.5px;
 }
 
-.dam-solution {
+.subpage-solution {
   margin-bottom: var(--space-2xl);
   padding-top: var(--space-lg);
   border-top: 1px solid rgba(33, 33, 33, 0.1);
+}
+
+.subpage-solution p {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: -0.5px;
 }
 
 .audience-section {
@@ -616,6 +618,29 @@ a.pill-dark:hover {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-xs);
+}
+
+/* Legacy DAM page styles (for backwards compatibility) */
+.dam-page {
+  padding: var(--space-lg) 0 var(--space-3xl);
+}
+
+.dam-page h1 {
+  margin-bottom: var(--space-lg);
+}
+
+.dam-intro {
+  margin-bottom: var(--space-xl);
+}
+
+.dam-intro p {
+  margin-bottom: var(--space-md);
+}
+
+.dam-solution {
+  margin-bottom: var(--space-2xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(33, 33, 33, 0.1);
 }
 
 /* ==========================================================================
