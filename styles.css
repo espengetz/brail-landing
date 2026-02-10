@@ -75,14 +75,14 @@ a {
    ========================================================================== */
 
 h1 {
-  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-size: 50px;
   font-weight: 500;
   letter-spacing: var(--letter-spacing);
   line-height: 1.1;
 }
 
 h2 {
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-size: 45px;
   font-weight: 500;
   letter-spacing: var(--letter-spacing);
   line-height: 1.2;
@@ -215,7 +215,7 @@ section {
 .btn-white {
   background: var(--brail-white);
   color: var(--brail-charcoal);
-  border-radius: var(--border-radius);
+  border-radius: 5px;
 }
 
 .btn-white:hover {
@@ -270,11 +270,11 @@ a.pill-dark:hover {
 }
 
 .hero-subtitle {
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  color: var(--brail-charcoal);
+  font-size: 30px;
+  color: #000000;
   opacity: 0.9;
   margin-bottom: var(--space-lg);
-  line-height: 1.7;
+  line-height: 40px;
 }
 
 .hero-pills {
@@ -323,11 +323,13 @@ a.pill-dark:hover {
 .use-case-card h3 {
   margin-bottom: var(--space-sm);
   line-height: 1.35;
+  font-size: 30px;
 }
 
 .use-case-card .testimonial {
-  font-size: 0.9375rem;
-  color: var(--brail-charcoal);
+  font-size: 20px;
+  color: #000000;
+  letter-spacing: -1px;
   opacity: 0.75;
   flex-grow: 1;
   margin-bottom: var(--space-md);
@@ -507,7 +509,7 @@ a.pill-dark:hover {
 }
 
 .future-card {
-  background: var(--brail-white);
+  background: #FFEDE5;
   border-radius: var(--border-radius);
   padding: var(--space-xl);
   max-width: 820px;
@@ -520,7 +522,9 @@ a.pill-dark:hover {
 
 .future-card p {
   margin-bottom: var(--space-md);
-  line-height: 1.6;
+  font-size: 30px;
+  letter-spacing: -1.5px;
+  line-height: 40px;
 }
 
 .future-card p:last-of-type {
