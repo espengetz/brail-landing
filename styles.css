@@ -239,7 +239,7 @@ section {
   display: inline-flex;
   align-items: center;
   padding: 0.5rem 1rem;
-  font-size: 0.875rem;
+  font-size: 1.125rem;
   font-weight: 400;
   letter-spacing: var(--letter-spacing);
   border-radius: var(--border-radius-pill);
