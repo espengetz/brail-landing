@@ -686,8 +686,18 @@ a.pill-dark:hover {
     letter-spacing: -0.5px;
   }
   
+  .hero-subtitle br {
+    display: none;
+  }
+  
   .how-it-works-subtitle {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+  }
+  
+  .how-it-works-subtitle br {
+    display: none;
   }
   
   .use-case-card h3 {
