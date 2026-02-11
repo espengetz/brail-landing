@@ -252,6 +252,7 @@ a.pill-dark:hover {
 .pill-light {
   background: var(--brail-grey);
   color: var(--brail-charcoal);
+  border: 1px solid #DADADA;
 }
 
 /* ==========================================================================
@@ -528,7 +529,7 @@ a.pill-dark:hover {
   margin-bottom: var(--space-md);
   font-size: 20px;
   line-height: 1.6;
-  letter-spacing: -0.5px;
+  letter-spacing: -1px;
 }
 
 .subpage-solution {
@@ -545,6 +546,8 @@ a.pill-dark:hover {
 
 .audience-section {
   margin-bottom: var(--space-xl);
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .audience-section h2 {
@@ -555,6 +558,8 @@ a.pill-dark:hover {
 .audience-section > p {
   margin-bottom: var(--space-md);
   opacity: 0.85;
+  font-size: 20px;
+  letter-spacing: -1px;
 }
 
 .audience-pills {
