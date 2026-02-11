@@ -252,7 +252,6 @@ a.pill-dark:hover {
 .pill-light {
   background: var(--brail-grey);
   color: var(--brail-charcoal);
-  border: 1px solid #DADADA;
 }
 
 /* ==========================================================================
@@ -401,8 +400,8 @@ a.pill-dark:hover {
 
 .how-it-works-subtitle {
   text-align: center;
-  font-size: 30px;
-  letter-spacing: -1.5px;
+  font-size: 20px;
+  letter-spacing: -0.5px;
   opacity: 0.85;
   margin-bottom: var(--space-xl);
 }
@@ -529,34 +528,23 @@ a.pill-dark:hover {
   margin-bottom: var(--space-md);
   font-size: 20px;
   line-height: 1.6;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
 }
 
 .subpage-solution {
-  margin-bottom: 0;
-  padding-top: 0;
-  border-top: none;
+  margin-bottom: var(--space-2xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(33, 33, 33, 0.1);
 }
 
 .subpage-solution p {
   font-size: 20px;
   line-height: 1.6;
-  letter-spacing: -1px;
-  position: relative;
-}
-
-.subpage-solution p:nth-of-type(1) {
-  top: -40px;
-}
-
-.subpage-solution p:nth-of-type(2) {
-  top: -17px;
+  letter-spacing: -0.5px;
 }
 
 .audience-section {
   margin-bottom: var(--space-xl);
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .audience-section h2 {
@@ -567,8 +555,6 @@ a.pill-dark:hover {
 .audience-section > p {
   margin-bottom: var(--space-md);
   opacity: 0.85;
-  font-size: 20px;
-  letter-spacing: -1px;
 }
 
 .audience-pills {
@@ -654,4 +640,101 @@ a.pill-dark:hover {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* ==========================================================================
+   Mobile Overrides
+   ========================================================================== */
+
+@media (max-width: 600px) {
+  /* Reduced spacing above sections and h1s */
+  section {
+    padding: var(--space-lg) 0;
+  }
+  
+  .hero {
+    padding: var(--space-lg) 0 var(--space-lg);
+  }
+  
+  .social-proof,
+  .how-it-works,
+  .future-of-brands {
+    padding: var(--space-lg) 0;
+  }
+  
+  .subpage,
+  .dam-page {
+    padding: var(--space-sm) 0 var(--space-2xl);
+  }
+  
+  /* Reduced font sizes - maintaining ratio */
+  h1 {
+    font-size: 32px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+  }
+  
+  .how-it-works-subtitle {
+    font-size: 16px;
+  }
+  
+  .use-case-card h3 {
+    font-size: 20px;
+  }
+  
+  .use-case-card .testimonial {
+    font-size: 16px;
+  }
+  
+  .future-card p {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+  }
+  
+  .subpage-intro p,
+  .subpage-solution p {
+    font-size: 16px;
+  }
+  
+  .pill {
+    font-size: 0.9375rem;
+    padding: 0.4rem 0.875rem;
+  }
+  
+  .step-item p {
+    font-size: 0.9375rem;
+  }
+  
+  /* Header stacked on mobile */
+  .header-inner {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+  
+  .header-left,
+  .header-right {
+    flex: none;
+    justify-content: center;
+  }
+  
+  .header-left {
+    display: none;
+  }
+  
+  .btn-white {
+    font-size: 16px;
+  }
 }
