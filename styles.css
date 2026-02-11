@@ -533,15 +533,24 @@ a.pill-dark:hover {
 }
 
 .subpage-solution {
-  margin-bottom: var(--space-2xl);
-  padding-top: var(--space-lg);
-  border-top: 1px solid rgba(33, 33, 33, 0.1);
+  margin-bottom: 0;
+  padding-top: 0;
+  border-top: none;
 }
 
 .subpage-solution p {
   font-size: 20px;
   line-height: 1.6;
-  letter-spacing: -0.5px;
+  letter-spacing: -1px;
+  position: relative;
+}
+
+.subpage-solution p:nth-of-type(1) {
+  top: -40px;
+}
+
+.subpage-solution p:nth-of-type(2) {
+  top: -17px;
 }
 
 .audience-section {
