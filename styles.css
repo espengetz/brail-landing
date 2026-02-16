@@ -400,8 +400,8 @@ a.pill-dark:hover {
 
 .how-it-works-subtitle {
   text-align: center;
-  font-size: 20px;
-  letter-spacing: -0.5px;
+  font-size: 30px;
+  letter-spacing: -1px;
   opacity: 0.85;
   margin-bottom: var(--space-xl);
   max-width: 600px;
