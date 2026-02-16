@@ -250,9 +250,10 @@ a.pill-dark:hover {
 }
 
 .pill-light {
-  background: transparent;
+  background: var(--brail-grey);
   color: var(--brail-charcoal);
-  border: 1.5px solid var(--brail-peach-dark);
+  border: 1.5px solid #DADADA;
+  border-radius: 5px;
 }
 
 /* ==========================================================================
@@ -551,7 +552,7 @@ a.pill-dark:hover {
 }
 
 .audience-section {
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
 }
 
 .audience-section h2 {
