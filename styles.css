@@ -552,7 +552,8 @@ a.pill-dark:hover {
 }
 
 .audience-section {
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
+  padding: 0;
 }
 
 .audience-section h2 {
@@ -561,7 +562,7 @@ a.pill-dark:hover {
 }
 
 .audience-section > p {
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs);
   opacity: 0.85;
 }
 
@@ -754,5 +755,14 @@ a.pill-dark:hover {
   
   .btn-white {
     font-size: 16px;
+  }
+  
+  /* Small body text letter-spacing on mobile */
+  .subpage-intro p,
+  .subpage-solution p,
+  .audience-section > p,
+  .step-item p,
+  .use-case-card .testimonial {
+    letter-spacing: -0.5px;
   }
 }
