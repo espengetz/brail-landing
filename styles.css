@@ -269,7 +269,7 @@ a.pill-dark:hover {
 }
 
 .hero-subtitle {
-  font-size: 25px;
+  font-size: 30px;
   color: #000000;
   opacity: 0.9;
   margin-bottom: var(--space-lg);
@@ -400,11 +400,11 @@ a.pill-dark:hover {
 
 .how-it-works-subtitle {
   text-align: center;
-  font-size: 25px;
-  letter-spacing: -1px;
+  font-size: 20px;
+  letter-spacing: -0.5px;
   opacity: 0.85;
   margin-bottom: var(--space-xl);
-  max-width: 800px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -432,12 +432,25 @@ a.pill-dark:hover {
   width: 16px;
   height: 16px;
   margin-top: 4px;
+  animation: tick-rotate 8s steps(8, end) infinite;
 }
 
 .step-icon img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+/* Staggered animation delays for each step */
+.step-item:nth-child(1) .step-icon { animation-delay: 0s; }
+.step-item:nth-child(2) .step-icon { animation-delay: 0.5s; }
+.step-item:nth-child(3) .step-icon { animation-delay: 1s; }
+.step-item:nth-child(4) .step-icon { animation-delay: 1.5s; }
+.step-item:nth-child(5) .step-icon { animation-delay: 2s; }
+
+@keyframes tick-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .step-item p {
@@ -476,7 +489,7 @@ a.pill-dark:hover {
 
 .future-card p {
   margin-bottom: var(--space-md);
-  font-size: 25px;
+  font-size: 30px;
   letter-spacing: -1.5px;
   line-height: 40px;
 }
@@ -697,6 +710,9 @@ a.pill-dark:hover {
     font-size: 18px;
     line-height: 26px;
     letter-spacing: -0.5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .how-it-works-subtitle br {
