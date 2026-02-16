@@ -56,7 +56,7 @@ html {
 body {
   font-family: var(--font-family);
   letter-spacing: var(--letter-spacing);
-  color: var(--brail-charcoal);
+  color: #000000;
   background: var(--brail-peach);
   line-height: 1.5;
 }
@@ -207,7 +207,7 @@ section {
 
 .btn-white {
   background: var(--brail-white);
-  color: var(--brail-charcoal);
+  color: #000000;
   border-radius: 5px;
   font-size: 18px;
   letter-spacing: -1px;
