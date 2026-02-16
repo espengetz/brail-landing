@@ -554,6 +554,7 @@ a.pill-dark:hover {
 .audience-section {
   margin-bottom: var(--space-md);
   padding: 0;
+  padding-top: 20px;
 }
 
 .audience-section h2 {
@@ -564,6 +565,8 @@ a.pill-dark:hover {
 .audience-section > p {
   margin-bottom: var(--space-xs);
   opacity: 0.85;
+  font-size: 20px;
+  letter-spacing: -1px;
 }
 
 .audience-pills {
@@ -764,5 +767,13 @@ a.pill-dark:hover {
   .step-item p,
   .use-case-card .testimonial {
     letter-spacing: -0.5px;
+  }
+  
+  .audience-section {
+    padding-top: 0;
+  }
+  
+  .audience-section > p {
+    font-size: 16px;
   }
 }
