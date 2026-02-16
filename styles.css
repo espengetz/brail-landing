@@ -269,7 +269,7 @@ a.pill-dark:hover {
 }
 
 .hero-subtitle {
-  font-size: 30px;
+  font-size: 25px;
   color: #000000;
   opacity: 0.9;
   margin-bottom: var(--space-lg);
@@ -400,11 +400,11 @@ a.pill-dark:hover {
 
 .how-it-works-subtitle {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   letter-spacing: -1px;
   opacity: 0.85;
   margin-bottom: var(--space-xl);
-  max-width: 600px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -476,7 +476,7 @@ a.pill-dark:hover {
 
 .future-card p {
   margin-bottom: var(--space-md);
-  font-size: 30px;
+  font-size: 25px;
   letter-spacing: -1.5px;
   line-height: 40px;
 }
