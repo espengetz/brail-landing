@@ -531,19 +531,22 @@ a.pill-dark:hover {
   margin-bottom: var(--space-md);
   font-size: 20px;
   line-height: 1.6;
-  letter-spacing: -0.5px;
+  letter-spacing: -1px;
 }
 
 .subpage-solution {
   margin-bottom: var(--space-2xl);
-  padding-top: var(--space-lg);
-  border-top: 1px solid rgba(33, 33, 33, 0.1);
 }
 
 .subpage-solution p {
   font-size: 20px;
   line-height: 1.6;
-  letter-spacing: -0.5px;
+  letter-spacing: -1px;
+  margin-bottom: var(--space-md);
+}
+
+.subpage-solution p:last-child {
+  margin-bottom: 0;
 }
 
 .audience-section {
