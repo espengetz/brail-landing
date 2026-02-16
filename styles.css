@@ -250,8 +250,9 @@ a.pill-dark:hover {
 }
 
 .pill-light {
-  background: var(--brail-grey);
+  background: transparent;
   color: var(--brail-charcoal);
+  border: 1.5px solid var(--brail-peach-dark);
 }
 
 /* ==========================================================================
@@ -524,7 +525,7 @@ a.pill-dark:hover {
 }
 
 .subpage-intro {
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-md);
 }
 
 .subpage-intro p {
@@ -550,16 +551,16 @@ a.pill-dark:hover {
 }
 
 .audience-section {
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-md);
 }
 
 .audience-section h2 {
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs);
 }
 
 .audience-section > p {
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
   opacity: 0.85;
 }
 
@@ -728,10 +729,6 @@ a.pill-dark:hover {
   .pill {
     font-size: 0.9375rem;
     padding: 0.4rem 0.875rem;
-  }
-  
-  .step-item p {
-    font-size: 0.9375rem;
   }
   
   .step-item p {
